@@ -1,261 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Anix Lynch - Data Scientist & ML Engineer based in Los Angeles. Passionate about automating stuff and building AI solutions.">
-  <meta name="keywords" content="Data Scientist, ML Engineer, Machine Learning, AI, Python, Los Angeles">
-  <meta name="author" content="Anix Lynch">
-  <meta name="robots" content="index, follow">
-  
-  <!-- Open Graph Tags for Social Sharing -->
-  <meta property="og:title" content="Anix Lynch - Data Scientist & ML Engineer">
-  <meta property="og:description" content="Data Scientist & ML Engineer based in Los Angeles. Building AI solutions and automating workflows.">
-  <meta property="og:url" content="https://anixlynch.com">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:creator" content="@anixlynch">
-  
-  <title>Anix Lynch - Data Scientist & ML Engineer | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
-  
-  <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Anix Lynch",
-    "url": "https://anixlynch.com",
-    "image": "https://anixlynch.com/images/profile.jpg",
-    "sameAs": [
-      "https://linkedin.com/in/anixlynch",
-      "https://github.com/anixlynch",
-      "https://twitter.com/anixlynch",
-      "https://medium.com/@anixlynch",
-      "https://huggingface.co/anixlynch"
-    ],
-    "jobTitle": "Data Scientist & ML Engineer",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Freelance"
-    },
-    "knowsAbout": ["Machine Learning", "Data Science", "Python", "AI", "Automation"],
-    "birthPlace": {
-      "@type": "Place",
-      "name": "Bangkok, Thailand"
-    },
-    "homeLocation": {
-      "@type": "Place",
-      "name": "Los Angeles, CA"
-    }
-  }
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anix Lynch 🍋 | Links</title>
+    <meta name="description" content="AI Data Engineer & Architect - All my links in one place">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #e1ebf4 0%, #b9cfe3 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        .profile {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+            margin: 0 auto 1rem;
+            overflow: hidden;
+        }
+        
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .name {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #2d5070;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tagline {
+            font-size: 1rem;
+            color: #4a6f98;
+            margin-bottom: 0.5rem;
+        }
+        
+        .location {
+            font-size: 0.9rem;
+            color: #6a8fb8;
+        }
+        
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .link-card {
+            background: #fff;
+            padding: 1.25rem;
+            border-radius: 16px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border: 2px solid transparent;
+        }
+        
+        .link-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            border-color: #8cb0d4;
+        }
+        
+        .link-icon {
+            font-size: 2rem;
+            min-width: 50px;
+            text-align: center;
+        }
+        
+        .link-content {
+            flex: 1;
+        }
+        
+        .link-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2d5070;
+            margin-bottom: 0.25rem;
+        }
+        
+        .link-desc {
+            font-size: 0.85rem;
+            color: #6a8fb8;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 2rem;
+            color: #6a8fb8;
+            font-size: 0.85rem;
+        }
+        
+        @media (max-width: 640px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .name {
+                font-size: 1.5rem;
+            }
+            
+            .link-card {
+                padding: 1rem;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <div id="all">
-    <div id="header">
-      <div id="headercard">
-        <h1>
-          <a href="index.html" id="myname">Anix Lynch</a>
-        </h1>
-        <a href="mailto:anix@anixlynch.com">anix@anixlynch.com</a>
-        <p id="occupation">
-          Data Scientist, ML Engineer<br>
-          Los Angeles, CA
-        </p>
-      </div>
+    <div class="container">
+        <div class="profile">
+            <div class="avatar">
+                <img src="profile-photo.jpg" alt="Anix Lynch">
+            </div>
+            <h1 class="name">Anix Lynch 🍋</h1>
+            <p class="tagline">AI Data Engineer & Architect</p>
+            <p class="location">📍 Los Angeles, CA</p>
+        </div>
+        
+        <div class="links">
+            <a href="https://gozeroshot.dev" class="link-card">
+                <div class="link-icon">🚀</div>
+                <div class="link-content">
+                    <div class="link-title">Portfolio</div>
+                    <div class="link-desc">13 production AI projects with dashboards</div>
+                </div>
+            </a>
+            
+            <a href="https://github.com/anix-lynch" class="link-card">
+                <div class="link-icon">💻</div>
+                <div class="link-content">
+                    <div class="link-title">GitHub</div>
+                    <div class="link-desc">Code repositories & open source work</div>
+                </div>
+            </a>
+            
+            <a href="https://linkedin.com/in/anixlynch" class="link-card">
+                <div class="link-icon">💼</div>
+                <div class="link-content">
+                    <div class="link-title">LinkedIn</div>
+                    <div class="link-desc">Professional experience & network</div>
+                </div>
+            </a>
+            
+            <a href="https://bsky.app/profile/anixlynch.bsky.social" class="link-card">
+                <div class="link-icon">🦋</div>
+                <div class="link-content">
+                    <div class="link-title">Bluesky</div>
+                    <div class="link-desc">Thoughts on AI & data engineering</div>
+                </div>
+            </a>
+            
+            <a href="https://huggingface.co/spaces/anixlynch/anixlynch" class="link-card">
+                <div class="link-icon">🤗</div>
+                <div class="link-content">
+                    <div class="link-title">HuggingFace</div>
+                    <div class="link-desc">ML models & demos</div>
+                </div>
+            </a>
+            
+            <a href="https://medium.com/@anixlynch" class="link-card">
+                <div class="link-icon">📝</div>
+                <div class="link-content">
+                    <div class="link-title">Medium</div>
+                    <div class="link-desc">Technical writing & tutorials</div>
+                </div>
+            </a>
+            
+            <a href="https://github.com/anix-lynch/kpi-evidence" class="link-card">
+                <div class="link-icon">📊</div>
+                <div class="link-content">
+                    <div class="link-title">Evidence Repo</div>
+                    <div class="link-desc">Production ops dashboards & KPIs</div>
+                </div>
+            </a>
+            
+            <a href="mailto:anix@anixlynch.com" class="link-card">
+                <div class="link-icon">✉️</div>
+                <div class="link-content">
+                    <div class="link-title">Email</div>
+                    <div class="link-desc">anix@anixlynch.com</div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="footer">
+            <p>Built with 🍋 in Los Angeles</p>
+        </div>
     </div>
-
-    <div id="maincontents">
-      <div class="section">
-        <div class="sectioncontents">
-          <div class="social-links">
-            <a href="https://linkedin.com/in/anixlynch" title="LinkedIn" target="_blank" onclick="gtag('event', 'click', {'event_category': 'social', 'event_label': 'LinkedIn'});"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/anixlynch" title="GitHub" target="_blank" onclick="gtag('event', 'click', {'event_category': 'social', 'event_label': 'GitHub'});"><i class="fab fa-github"></i></a>
-            <a href="https://twitter.com/anixlynch" title="Twitter" target="_blank" onclick="gtag('event', 'click', {'event_category': 'social', 'event_label': 'Twitter'});"><i class="fab fa-x-twitter"></i></a>
-            <a href="https://huggingface.co/anixlynch" title="HuggingFace" target="_blank" onclick="gtag('event', 'click', {'event_category': 'social', 'event_label': 'HuggingFace'});"><i class="fas fa-face-smile"></i></a>
-            <a href="https://medium.com/@anixlynch" title="Medium" target="_blank" onclick="gtag('event', 'click', {'event_category': 'social', 'event_label': 'Medium'});"><i class="fab fa-medium"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="section">
-        <h2>Venture Capital & Impact</h2>
-        <div class="sectioncontents">
-          <pre class="ascii-box">╔════════════════════════════════════════════════════════════════╗
-║   $2B+ PE/VC   |   700+ deals/yr   |   $1M checks   |  500+ startups  ║
-╚════════════════════════════════════════════════════════════════╝</pre>
-          <p style="font-size: 1.1em; line-height: 1.6em;">
-            <strong>Managing Partner at Expara Thailand</strong> with 20+ years of experience and track record over <span class="highlight-stat">$2B in PE/VC</span>.
-          </p>
-          
-          <h3>🇹🇭 Thailand's Startup Ecosystem Architect</h3>
-          
-          <pre class="ascii-badge">╭───────────────────────────────────────────────╮
-│   THAILAND'S FIRST SOVEREIGN WEALTH VC FUND   │
-╰───────────────────────────────────────────────╯</pre>
-
-          <ul>
-            <li><strong>True Digital Park</strong> — Conceptualized Thailand's largest tech hub (<span class="highlight-stat">$568M</span>, 10,000 sqm)</li>
-            <li><strong>Thailand 4.0 Policy</strong> — Brainchild of national innovation strategy (Bangkok Beta plan)</li>
-            <li><strong>Thailand's First Government VC Fund</strong> — Created <span class="highlight-stat">$15M</span> C-stage fund with Government Savings Bank</li>
-            <li><strong>Techsauce FAB Stage</strong> — Built future-forward platform (Food/Agri/Biotech), grew audience 10K→15K</li>
-            <li><strong>Policy Impact</strong> — One Stop Shop, Smart Visa, VC tax waivers, <span class="highlight-stat">$560M</span> government funding for 10,000 startups</li>
-          </ul>
-
-          <h3>💼 Strategic Leadership</h3>
-          
-          <pre class="ascii-flow">   ┌──────────────┐    ┌───────────────┐    ┌────────────┐    ┌─────────────┐
-   │ Deal Sourcing│ →  │ Screening     │ →  │ Investment  │ →  │ Portfolio   │
-   │ (40+ VCs)    │    │ 700+/year     │    │ Committee   │    │ (Ooca, etc.)│
-   └──────────────┘    └───────────────┘    └────────────┘    └─────────────┘</pre>
-
-          <ul>
-            <li><strong>MQDC (CP Group) — VP Business Intelligence</strong> — Forbes <span class="highlight-stat">#1 wealthiest family in SEA</span></li>
-            <li><strong>Portfolio Construction</strong> — Lead investor/Director: Ooca (Mental Health), Event Banana, Peak Engine, One Stockhome</li>
-            <li><strong>Deal Flow</strong> — Screened <span class="highlight-stat">700+ deals/year</span> across Fintech, DeepTech, AI, HealthTech, Blockchain, EdTech, PropTech</li>
-            <li><strong>Ecosystem Building</strong> — 8 accelerators, 40+ VCs, 6 media partners, 500+ startup community</li>
-          </ul>
-
-          <h3>🌏 Global Bridge Builder</h3>
-          
-          <pre class="ascii-map">                           ┌─────────────┐
-                           │  40+ VCs    │
-                           └──────┬──────┘
-                                  │
-      ┌──────────────┐     ┌─────┴─────┐      ┌──────────────────┐
-      │8 Accelerators│ ←── │  ANIX VC  │ ───→ │Government (GSB/SET)│
-      └──────────────┘     └─────┬─────┘      └──────────────────┘
-                                  │
-                           ┌──────┴─────┐
-                           │500+ Startups│
-                           └─────────────┘</pre>
-
-          <ul>
-            <li><strong>Silicon Valley Collaboration</strong> — Google, Facebook, Uber, Airbnb, Khosla Ventures, 500 Startups</li>
-            <li><strong>Real Estate PE</strong> — MGPA BlackRock (<span class="highlight-stat">$11B AUM</span>), Capital Realty (<span class="highlight-stat">$30B portfolio</span>)</li>
-            <li><strong>Cross-Border Deals</strong> — Japan, China, Hong Kong, Singapore, Europe</li>
-            <li><strong>Global Citizen</strong> — 16 yrs Japan • 3 yrs USA • 2 yrs Singapore • 1 yr London • 6/7 continents</li>
-          </ul>
-
-          <h3>🎓 Academic & Recognition</h3>
-          <ul>
-            <li><strong>Visiting Lecturer</strong> — Entrepreneurship at <span class="highlight-stat">Chicago Booth MBA</span> & Sasin MBA</li>
-            <li><strong>Named Thailand's Top Female VCs</strong></li>
-            <li><strong>Documentary Producer</strong> — "Hidden Talent" (<span class="highlight-stat">Silver Award</span>, World MBA Council)</li>
-            <li><strong>TV Commentator</strong> — LINE TV "Startup Star 4.0", True Television</li>
-            <li><strong>Frequent Speaker</strong> — Web Summit (Ireland), Slush (Tokyo & Helsinki), Techsauce, Seedstar</li>
-          </ul>
-
-          <h3>🎯 Now: From Policy to AI</h3>
-          <p>
-            Transitioning legacy experience into autonomous, data-driven innovation.
-          </p>
-          <p style="margin-left: 1.5em; border-left: 3px solid var(--yellow); padding-left: 1em; font-style: italic;">
-            "Use technology to empower creativity, not replace it."
-          </p>
-          <p>
-            Currently building: <strong>SmoothieVerse</strong>, <strong>Father Figure AI</strong>, <strong>Pushback AI</strong>.<br>
-            Explore more at <a href="https://gozeroshot.dev">gozeroshot.dev</a>
-          </p>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="sectioncontents">
-          <p style="font-size: 1.5em; text-align: center; letter-spacing: 0.3em;">
-            🇹🇭 🇯🇵 🇺🇸 💻 🎹 💃 🏋️ 💛 🍋
-          </p>
-        </div>
-      </div>
-
-      <div class="section">
-        <h2>Gallery</h2>
-        <div class="sectioncontents">
-          <p>A glimpse into my past life in Venture Capital.</p>
-          
-          <div class="gallery-grid">
-            <div class="gallery-item"><img src="images/gallery/EB press.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/IMG_0079.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/IMG_0080.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/IMG_0333.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/IMG_0360.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/IMG_0374.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/IMG_0386.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/IMG_0634.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/IMG_0691.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/IMG_0693.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/IMG_0709.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/IMG_0711.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/IMG_0739.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/IMG_0742.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/IMG_0751.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/IMG_0752.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/IMG_0754.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/IMG_0757.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/151825986_10160811082629937_2170212629189884083_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/153908720_10160811082639937_1966974819955562743_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/29261160_10155769243264300_3982142987923619840_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/34066390_2098259696883200_5463854843313520640_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/466485173_10231722750519111_2923371242269399091_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/466595608_10228254829335431_2222913254701656121_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/467753032_10237141193818505_4041157456766659728_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/467813400_10160641189105737_3991412274140137678_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/468224335_10164569342469937_455290697263460889_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/468353655_10164562464924937_6206931299641800322_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/468448279_10162160113289446_6728003575914282623_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/468598390_10164720023139937_8166384553460372956_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/468669107_10169798887355557_4547864683401164894_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/468771122_10164779835844937_8563739490605595723_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/468821662_10165247028684554_2877376512624702570_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/468842441_10164775714889937_7835345832875568730_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/468957317_10164779960074937_1123803483903531878_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/471565622_10164967166219937_3808624497138594976_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/471582563_10160982682037285_1780425722953523363_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/471917450_10160982906197285_1548335545573737658_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/471995904_10170235185375608_7394298208783412346_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/472090478_10164994573269937_2796784983020060184_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/472099960_10165008616104937_4212341788920392147_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/472103104_10165008607139937_8791643408344567733_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/472123372_10165016447034937_6578703626878025268_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/472224656_10165016427019937_4483299079214070423_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/473566450_10170611073085557_7342576237428386150_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/474210025_10171930425680393_1423480298891679833_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/504173399_9959804077402669_3143528952215105066_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/504195448_9959804184069325_6443356031566423767_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/554080739_24918974827715763_8601431877215500931_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/62126104_10213646396381265_3250733336137564160_n.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/IMG_0758.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/IMG_1019.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/IMG_1020.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/IMG_1517.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/IMG_2159.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/IMG_2268.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/IMG_3147.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/IMG_7845.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/IMG_7855.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/IMG_9809.JPG" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/eb post.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/newspaper.jpg" alt="Gallery Image" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/gallery/press post today.jpg" alt="Gallery Image" loading="lazy"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </body>
-
 </html>
